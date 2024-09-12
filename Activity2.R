@@ -28,7 +28,7 @@ max.ht <- floods %>%
 earlyDate <- floods %>%
   group_by(names) %>%
   filter(gheight.ft >= flood.ft) %>%
-  summarise(date=min(dateF, na.rm=TRUE))
+  summarise(min_date=min(dateF, na.rm=TRUE))
   
   
 
